@@ -1,4 +1,4 @@
-from datetime import date
+import datetime
 
 from pydantic import BaseModel, ConfigDict
 
@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict
 class MovieDetailResponseSchema(BaseModel):
     id: int
     name: str
-    date: date
+    date: datetime.date
     score: float
     genre: str
     overview: str
