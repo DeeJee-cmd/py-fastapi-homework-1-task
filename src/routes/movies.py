@@ -32,8 +32,7 @@ async def get_movies(
         .limit(per_page)
     )
     movies = result.scalars().all()
-
-    base = "/api/v1/theater/movies/"
+    base = "/theater/movies/"
     prev_page = (
         f"{base}?page={page - 1}&per_page={per_page}" if page > 1 else None
     )
