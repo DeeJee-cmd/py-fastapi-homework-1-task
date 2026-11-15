@@ -8,6 +8,7 @@ from schemas import MovieListResponseSchema
 
 router = APIRouter()
 
+
 @router.get(
     "/movies",
     response_model=MovieListResponseSchema
